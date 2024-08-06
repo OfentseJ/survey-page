@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This survey will help us improve. Please fill in the form below.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name:
+        <input type="text" id="name" placeholder="eg. Ofentse" required/>
+      </label>
+      <label id="email-label" for="email">Email:
+        <input type="email" id="email" placeholder="eg. ofentse@domain.com" required/>
+      </label>
+      <label id="number-label" for="number">Phone Number(Optional):
+        <input type="number" id="number" min="10" max="12" placeholder="eg. 060 553 7848" />
+      </label>
+      </fieldset>
+      <fieldset>
+        <p>What is your gender?</p>
+        <select id="dropdown">
+          <option value="">(select)</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Prefer not to say</option>
+          <option value="Other">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <p>What size shoe do you wear?</p>
+        <label for="size-1-4">
+          <input type="radio" class="inline" id="size-1-4" name="shoe-size" value="1-4"/>1-4
+        </label>
+        <label for="size-5-8">
+          <input type="radio" class="inline" id="size-5-8" name="shoe-size" value="5-8" />5-8
+        </label>
+        <label for="size-9-12">
+          <input type="radio" class="inline" id="size-9-12" name="shoe-size" value="9-12" />9-12
+        </label>
+        <label for="size-other">
+          <input type="radio" class="inline" id="size-other" name="shoe-size" value="other"/>Other
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Select the types of shoes you have a pair of:</p>
+        <label>
+          <input type="checkbox" class="inline" value="Sneakers"/>Sneakers
+        </label>
+        <label>
+          <input type="checkbox" class="inline" value="Loafers"/>Loafers
+        </label>
+        <label>
+          <input type="checkbox" class="inline" value="Boots"/>Boots
+        </label>
+        <label>
+          <input type="checkbox" class="inline" value="Running Shoes"/>Running Shoes
+        </label>
+        <label>
+          <input type="checkbox" class="inline" value="Slippers"/>Slippers
+        </label>
+      </fieldset>
+      <label for="suggestions">
+        Do you have any Suggestions?
+        <textarea id="suggestions" rows="5" cols="30" placeholder="Enter here..."></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit"/> 
+    </form>
+  </body>
+</html>
